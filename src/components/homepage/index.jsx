@@ -24,7 +24,14 @@ const HomePage = () => (
 				Learn More
 			</Button>
 			<Row gutter={16} className="w-full justify-center">
-				<Col span={6} className="text-center">
+				<Col
+					xs={24}
+					sm={24}
+					md={12}
+					lg={8}
+					xl={6}
+					className="text-center"
+				>
 					<Card
 						hoverable
 						// cover={<img alt="example" src="img1.jpg" />}
@@ -48,7 +55,14 @@ const HomePage = () => (
 						/>
 					</Card>
 				</Col>
-				<Col span={6} className="text-center">
+				<Col
+					xs={24}
+					sm={24}
+					md={12}
+					lg={8}
+					xl={6}
+					className="text-center"
+				>
 					<Card
 						hoverable
 						// cover={<img alt="example" src="img2.jpg" />}
@@ -74,7 +88,14 @@ const HomePage = () => (
 						/>
 					</Card>
 				</Col>
-				<Col span={6} className="text-center">
+				<Col
+					xs={24}
+					sm={24}
+					md={12}
+					lg={8}
+					xl={6}
+					className="text-center"
+				>
 					<Card
 						hoverable
 						// cover={<img alt="example" src="img3.jpg" />}
