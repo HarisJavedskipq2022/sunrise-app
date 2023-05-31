@@ -88,25 +88,25 @@ const ResultsPage = () => {
 													<tr>
 														<th
 															scope="col"
-															className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+															className="px-2 sm:px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
 														>
 															Student
 														</th>
 														<th
 															scope="col"
-															className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+															className="px-2 sm:px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
 														>
 															Marks Obtained
 														</th>
 														<th
 															scope="col"
-															className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+															className="px-2 sm:px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
 														>
 															Percentage
 														</th>
 														<th
 															scope="col"
-															className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+															className="px-2 sm:px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
 														>
 															Result
 														</th>
@@ -161,25 +161,25 @@ const ResultsPage = () => {
 													<tr>
 														<th
 															scope="col"
-															className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+															className="px-2 sm:px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
 														>
 															Student
 														</th>
 														<th
 															scope="col"
-															className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+															className="px-2 sm:px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
 														>
 															Marks Obtained
 														</th>
 														<th
 															scope="col"
-															className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+															className="px-2 sm:px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
 														>
 															Percentage
 														</th>
 														<th
 															scope="col"
-															className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+															className="px-2 sm:px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
 														>
 															Result
 														</th>
