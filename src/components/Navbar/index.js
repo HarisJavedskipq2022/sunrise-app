@@ -7,6 +7,7 @@ import {
 	FaCog,
 	FaClipboardList,
 	FaEnvelope,
+	FaBriefcase,
 } from "react-icons/fa";
 
 const Navbar = () => {
@@ -18,7 +19,7 @@ const Navbar = () => {
 
 	return (
 		<nav className="bg-gradient-to-r from-indigo-900 to-purple-900">
-			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex justify-between h-16">
 					<div className="flex items-center">
 						<Link to="/" className="text-white text-2xl font-bold">
@@ -63,6 +64,19 @@ const Navbar = () => {
 						>
 							<FaEnvelope className="h-5 w-5 mr-1" />
 							Contact
+						</Link>
+						<Link
+							to="/careers"
+							className="flex items-center text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
+						>
+							<FaBriefcase className="h-5 w-5 mr-1" />
+							Careers
+						</Link>
+						<Link
+							to="/admission"
+							className="flex items-center text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
+						>
+							Admission
 						</Link>
 					</div>
 					<div className="flex md:hidden">
@@ -146,6 +160,21 @@ const Navbar = () => {
 							>
 								<FaEnvelope className="h-5 w-5 mr-2" />
 								Contact
+							</Link>
+							<Link
+								to="/careers"
+								className="flex items-center text-white hover:text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
+								onClick={toggleMenu}
+							>
+								<FaBriefcase className="h-5 w-5 mr-2" />
+								Careers
+							</Link>
+							<Link
+								to="/admission"
+								className="flex items-center text-white hover:text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
+								onClick={toggleMenu}
+							>
+								Admission
 							</Link>
 						</div>
 					</div>

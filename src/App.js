@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import ServicesPage from "./components/Servicespage";
 import ResultsPage from "./components/Resultspage";
 import ContactPage from "./components/Contactus";
+import CareersPage from "./components/Careers";
+import AdmissionPage from "./components/Admissions";
 
 function App() {
 	return (
@@ -17,6 +19,8 @@ function App() {
 				<Route path="/services" element={<ServicesPage />} />
 				<Route path="/results" element={<ResultsPage />} />
 				<Route path="/contact" element={<ContactPage />} />
+				<Route path="/careers" element={<CareersPage />} />
+				<Route path="/admission" element={<AdmissionPage />} />
 			</Routes>
 		</Router>
 	);

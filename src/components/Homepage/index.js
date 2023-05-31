@@ -14,7 +14,7 @@ const HomePage = () => {
 	};
 
 	const cardVariants = {
-		hover: { scale: 1.05 },
+		hover: { scale: 1.1, transition: { duration: 0.3 } },
 	};
 
 	return (
@@ -52,6 +52,7 @@ const HomePage = () => {
 					<motion.div
 						className="bg-blue-400 rounded-lg shadow-lg overflow-hidden text-center"
 						variants={cardVariants}
+						whileHover="hover"
 					>
 						<div className="flex items-center justify-center h-48 bg-blue-500 text-white">
 							<RiBook2Line className="text-5xl" />
@@ -71,6 +72,7 @@ const HomePage = () => {
 					<motion.div
 						className="bg-purple-400 rounded-lg shadow-lg overflow-hidden text-center"
 						variants={cardVariants}
+						whileHover="hover"
 					>
 						<div className="flex items-center justify-center h-48 bg-purple-500 text-white">
 							<RiGroupLine className="text-5xl" />
@@ -93,6 +95,7 @@ const HomePage = () => {
 					<motion.div
 						className="bg-yellow-400 rounded-lg shadow-lg overflow-hidden text-center"
 						variants={cardVariants}
+						whileHover="hover"
 					>
 						<div className="flex items-center justify-center h-48 bg-yellow-500 text-white">
 							<RiShieldUserLine className="text-5xl" />
@@ -115,6 +118,7 @@ const HomePage = () => {
 					<motion.div
 						className="bg-green-400 rounded-lg shadow-lg overflow-hidden text-center"
 						variants={cardVariants}
+						whileHover="hover"
 					>
 						<div className="flex items-center justify-center h-48 bg-green-500 text-white">
 							<RiBuilding4Line className="text-5xl" />
