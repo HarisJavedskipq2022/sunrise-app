@@ -1,5 +1,4 @@
-import React from "react";
-import { Fragment, useState } from "react";
+import React, { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 
 const ExpandableRow = ({ student }) => {
@@ -9,11 +8,13 @@ const ExpandableRow = ({ student }) => {
 		<>
 			<tr className="cursor-pointer" onClick={() => setIsOpen(true)}>
 				<td className="px-6 py-4 whitespace-nowrap">{student.name}</td>
-				<td className="px-6 py-4 whitespace-nowrap">{student.marks}</td>
-				<td className="px-6 py-4 whitespace-nowrap">
+				<td className="px-6 py-4 whitespace-nowrap sm:table-cell md:table-cell lg:table-cell xl:table-cell">
+					{student.marks}
+				</td>
+				<td className="px-6 py-4 whitespace-nowrap sm:table-cell md:table-cell lg:table-cell xl:table-cell">
 					{student.percentage}
 				</td>
-				<td className="px-6 py-4 whitespace-nowrap">
+				<td className="px-6 py-4 whitespace-nowrap sm:table-cell md:table-cell lg:table-cell xl:table-cell">
 					{student.result}
 				</td>
 			</tr>
