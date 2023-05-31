@@ -1,4 +1,3 @@
-// Pages/ResultsPage.js
 import React from "react";
 import ExpandableRow from "./ExpandableRow";
 import { Disclosure } from "@headlessui/react";
@@ -24,6 +23,7 @@ const students9th = [
 	},
 	// Add more 9th grade students here...
 ];
+
 const students10th = [
 	{
 		name: "Jane Smith",
@@ -39,7 +39,7 @@ const students10th = [
 const ResultsPage = () => {
 	return (
 		<motion.div
-			className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12"
+			className="min-h-screen bg-gradient-to-r from-purple-500 to-indigo-600 py-6 flex flex-col justify-center sm:py-12"
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0 }}
@@ -54,7 +54,7 @@ const ResultsPage = () => {
 				>
 					<div className="max-w-md mx-auto space-y-4">
 						<div>
-							<h1 className="text-2xl font-semibold text-center mb-6">
+							<h1 className="text-3xl font-semibold text-center text-purple-900 mb-6">
 								Results
 							</h1>
 						</div>
@@ -63,7 +63,9 @@ const ResultsPage = () => {
 								{({ open }) => (
 									<>
 										<Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-											<span>9th Grade</span>
+											<span className="text-lg">
+												9th Grade
+											</span>
 											<ChevronUpIcon
 												className={`${
 													open
@@ -134,7 +136,9 @@ const ResultsPage = () => {
 								{({ open }) => (
 									<>
 										<Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-											<span>10th Grade</span>
+											<span className="text-lg">
+												10th Grade
+											</span>
 											<ChevronUpIcon
 												className={`${
 													open

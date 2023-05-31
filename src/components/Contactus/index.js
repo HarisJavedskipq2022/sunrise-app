@@ -16,7 +16,7 @@ const ContactPage = () => {
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0 }}
 		>
-			<div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white p-8 rounded-lg shadow-lg">
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 rounded-lg shadow-lg">
 				<div className="bg-gray-200 p-4 rounded-md shadow-md">
 					<h2 className="text-2xl font-bold text-gray-800 mb-4">
 						Contact Information
