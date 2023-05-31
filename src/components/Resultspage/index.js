@@ -21,7 +21,6 @@ const students9th = [
 		result: "Pass",
 		details: "John performed exceptionally well in all subjects.",
 	},
-	// Add more 9th grade students here...
 ];
 
 const students10th = [
@@ -33,7 +32,6 @@ const students10th = [
 		result: "Pass",
 		details: "Jane excelled in Math and Science subjects.",
 	},
-	// Add more 10th grade students here...
 ];
 
 const ResultsPage = () => {
