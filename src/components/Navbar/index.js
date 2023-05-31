@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Transition } from "@headlessui/react";
+import {
+	FaHome,
+	FaInfoCircle,
+	FaCog,
+	FaClipboardList,
+	FaEnvelope,
+} from "react-icons/fa";
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -15,38 +22,46 @@ const Navbar = () => {
 				<div className="flex justify-between h-16">
 					<div className="flex items-center">
 						<Link to="/" className="text-white text-2xl font-bold">
-							Pen of scholar is mightier than the sword -Edward
+							<span className="text-purple-300">Pen</span> of
+							scholar is{" "}
+							<span className="text-purple-300">mightier</span>{" "}
+							than the sword -Edward
 						</Link>
 					</div>
 					<div className="hidden md:flex items-center space-x-4">
 						<Link
 							to="/"
-							className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
+							className="flex items-center text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
 						>
+							<FaHome className="h-5 w-5 mr-1" />
 							Home
 						</Link>
 						<Link
 							to="/about"
-							className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
+							className="flex items-center text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
 						>
+							<FaInfoCircle className="h-5 w-5 mr-1" />
 							About
 						</Link>
 						<Link
 							to="/services"
-							className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
+							className="flex items-center text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
 						>
+							<FaCog className="h-5 w-5 mr-1" />
 							Services
 						</Link>
 						<Link
 							to="/results"
-							className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
+							className="flex items-center text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
 						>
+							<FaClipboardList className="h-5 w-5 mr-1" />
 							Results
 						</Link>
 						<Link
 							to="/contact"
-							className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
+							className="flex items-center text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
 						>
+							<FaEnvelope className="h-5 w-5 mr-1" />
 							Contact
 						</Link>
 					</div>
@@ -94,37 +109,42 @@ const Navbar = () => {
 						>
 							<Link
 								to="/"
-								className="text-white hover:text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
+								className="flex items-center text-white hover:text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
 								onClick={toggleMenu}
 							>
+								<FaHome className="h-5 w-5 mr-2" />
 								Home
 							</Link>
 							<Link
 								to="/about"
-								className="text-white hover:text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
+								className="flex items-center text-white hover:text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
 								onClick={toggleMenu}
 							>
+								<FaInfoCircle className="h-5 w-5 mr-2" />
 								About
 							</Link>
 							<Link
 								to="/services"
-								className="text-white hover:text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
+								className="flex items-center text-white hover:text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
 								onClick={toggleMenu}
 							>
+								<FaCog className="h-5 w-5 mr-2" />
 								Services
 							</Link>
 							<Link
 								to="/results"
-								className="text-white hover:text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
+								className="flex items-center text-white hover:text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
 								onClick={toggleMenu}
 							>
+								<FaClipboardList className="h-5 w-5 mr-2" />
 								Results
 							</Link>
 							<Link
 								to="/contact"
-								className="text-white hover:text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
+								className="flex items-center text-white hover:text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
 								onClick={toggleMenu}
 							>
+								<FaEnvelope className="h-5 w-5 mr-2" />
 								Contact
 							</Link>
 						</div>
